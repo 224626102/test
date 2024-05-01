@@ -38,7 +38,8 @@ pipeline {
         stage('Deploy to staging') {
             steps {
                 script {
-                    echo "Deploy the application to the testing environment '$TESTING_ENVIRONMENT'"
+                    echo "Deploy the application to the testing environment"
+                    echo "Tool used for this stage is AWC CodeDeploy"
                 }
             }
         }
