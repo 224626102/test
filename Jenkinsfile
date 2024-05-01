@@ -48,7 +48,7 @@ pipeline {
                 script {
                     echo "Runnning tests to ensure application fumctions as expected in a production-like environment"
                     echo "Tool used in this stage are JUnit and Selenium"
-                                    }
+                }
             }
         }
         stage('Deploy to Production') {
