@@ -33,7 +33,7 @@ pipeline {
                     echo "Perform a security scan on the code to identify any vulnerabilities"
                     echo "Tool used for scanning is OWASP ZAP"
                 }
-                post {
+                post{
                     success{
                     emailext to: "fawazcom@yahoo.com",
                     subject: "Scan Successful!",
