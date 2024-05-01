@@ -14,7 +14,7 @@ pipeline {
                 }
             }
         }
-        stage('Test') {
+        stage('Unit and Integration Test') {
             steps {
                 script {
                     echo "Running unit tests"
@@ -22,21 +22,28 @@ pipeline {
                 }
             }
         }
-        stage('Code') {
+        stage('Code Analysis') {
             steps {
                 script {
                     echo "Check the quality of the code"
                 }
             }
         }
-        stage('Deploy') {
+         stage('Security scan') {
+            steps {
+                script {
+                    echo "Check the quality of the code"
+                }
+            }
+        }
+        stage('Deploy to staging') {
             steps {
                 script {
                     echo "Deploy the application to the testing environment '$TESTING_ENVIRONMENT'"
                 }
             }
         }
-        stage('Approval') {
+        stage('Integration test on staging') {
             steps {
                 script {
                     echo "Waiting for manual approval"
