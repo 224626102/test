@@ -39,6 +39,12 @@ pipeline {
                             subject: "Scan Successful!",
                             body: "The scan was successful!",
                             attachLog: true
+                         }
+                    failure{
+                            mailext to: "fawazcom@yahoo.com",
+                            subject: "Scan failed!",
+                            body: "The scan was not successful!",
+                            attachLog: true
                     }
                 }
             }
