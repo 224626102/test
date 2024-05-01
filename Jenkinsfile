@@ -35,10 +35,10 @@ pipeline {
                 }
                 post{
                     success{
-                    emailext to: "fawazcom@yahoo.com",
-                    subject: "Scan Successful!",
-                    body: "The scan was successful!",
-                    attachLog: true
+                            emailext to: "fawazcom@yahoo.com",
+                            subject: "Scan Successful!",
+                            body: "The scan was successful!",
+                            attachLog: true
                     }
                 }
             }
