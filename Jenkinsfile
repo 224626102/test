@@ -1,11 +1,6 @@
 pipeline {
     agent any
-    environment {
-        DIRECTORY_PATH = "C:\\Deakin\\Task5.1\\Jenkins_Codes_SIT753"
-        TESTING_ENVIRONMENT = "TestEnv"
-        PRODUCTION_ENVIRONMENT = "Fawaz Ahmed"
-    }
-    stages {
+      stages {
         stage('Build') {
             steps {
                 script {
